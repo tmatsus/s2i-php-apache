@@ -1,9 +1,10 @@
 <?php
   $user = 'root';
-  $password = getenv('MYSQL_ROOT_PASSWORD');
+  #$password = getenv('MYSQL_ROOT_PASSWORD');
+  $password = 'root'
   $dbName = 'chapter6_db';
   $dbServer = getenv('DB_SERVER');
-  $host = "{$dbServer}:8889";
+  $host = "mysql3:3306";
   $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
 ?>
 
